@@ -16,8 +16,6 @@
   flex: 1;
 }
 
-/* Switch 2 Specific Style Start */
-
 .box_2{
   background: white;
 }
@@ -43,11 +41,21 @@ input[type="checkbox"].switch_2:after{
   transition: all .25s;
 }
 
+input[type="checkbox"][disabled].switch_2{
+  background-color: #E5E5E5;
+}
+
+input[type="checkbox"][disabled].switch_2:before{
+  border: 2px solid #B3B3B3;
+}
+
+/*#7F7F7F*/
+
 input[type="checkbox"].switch_2:before{
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   background: white;
-  border: 2.5px solid #666666;
+  border: 2px solid #666666;
   border-radius: 50%;
   top: 50%;
   left: 0;
@@ -78,6 +86,15 @@ input[type="checkbox"].switch_2:checked:after{
   -webkit-transform: scale(0);
   transform: scale(0);
 }
+
+input[type="checkbox"][disabled].switch_2:checked{
+  border: 2px solid #7F7F7F;
+  background: #7F7F7F;
+}
+input[type="checkbox"][disabled].switch_2:checked:before {
+  border: 2px solid #7F7F7F;
+}
+
 
 input[type="checkbox"].switch_2:checked{
   border: 2px solid black;
